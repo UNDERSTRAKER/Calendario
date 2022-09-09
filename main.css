@@ -1,0 +1,131 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #B175D8;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.title {
+	position: relative;
+	width: 100%;
+	max-width: 570px;
+	margin: 30px auto;
+	background-color: #DBB2F6;
+	margin:auto;
+	border-radius: 10px;
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+	
+	
+}
+
+h1 {
+	color: #1C032C;
+	font-size: 50px;
+	margin: 30px 0px;
+	padding: 10px;
+}
+
+
+.date-picker {
+	position: relative;
+	width: 100%;
+	max-width: 500px;
+	height: 60px;
+	background-color: #F1DBFF;
+	margin: 30px auto;
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+
+	cursor: pointer;
+	user-select: none;
+}
+
+.date-picker:hover {
+	background-color: #ECCFFE;
+}
+
+.date-picker .selected-date {
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: #1C032C;
+	font-size: 28px;
+}
+
+.date-picker .dates {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	border-radius: 10px;
+
+	background-color: #F1DBFF;
+}
+
+.date-picker .dates.active {
+	display: block;
+}
+
+.date-picker .dates .month {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 2px solid #1C032C;
+	font-size: 25px;
+}
+
+.date-picker .dates .month .arrows {
+	width: 35px;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #1C032C;
+	
+}
+
+.date-picker .dates .month .arrows:hover {
+	background-color: #F1DBFF;
+}
+
+.date-picker .dates .month .arrows:active {
+	background-color: #7D2AB4;
+}
+
+.date-picker .dates .days {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	height: 400px;
+}
+.date-picker .dates .days .day { 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #1C032C;
+	font-size: 30px;
+	
+
+}
+.date-picker .dates .days .day.selected {
+	background-color: #7D2AB4;
+	border-radius: 8px;
+}
+.date-picker .dates .days .day.selected-two {
+	background-color: #7D2AB4;
+	border-radius: 8px;
+}
+
+.date-picker .dates .days .day.in-between {
+	background-color: #E0B2FD;
+	border-radius: 8px;
+}
+
